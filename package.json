@@ -1,0 +1,28 @@
+{
+  "name": "lola",
+  "version": "1.0.0",
+  "description": "A real-time MySQL database indexer for Elastic search built with NodeJs and Redis",
+  "dependencies": {
+    "@elastic/elasticsearch": "^7.11.0",
+    "dotenv": "^8.2.0",
+    "mysql": "^2.18.1",
+    "redis": "^3.0.2"
+  },
+  "homepage": "https://github.com/firstCodeOutlaw/lola",
+  "keywords": [
+    "elastic search",
+    "database indexer",
+    "MySQL",
+    "search index",
+    "search indexing"
+  ],
+  "author": {
+    "email": "benjaminayangbola@gmail.com",
+    "name": "Benjamin Ayangbola"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/firstCodeOutlaw/lola"
+  },
+  "license": "Apache-2.0"
+}
