@@ -1,2 +1,2 @@
-# lohla
-A real-time MySQL table rows indexer for Elastic search built with NodeJs and Redis
+# Lola
+A real-time MySQL database indexer for Elastic search built with NodeJs and Redis
