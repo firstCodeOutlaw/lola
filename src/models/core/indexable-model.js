@@ -18,7 +18,7 @@ class IndexableModel {
     }
 
     /**
-     * Fetches Supreme Court ratios and indexes them
+     * Lays ground-work prior to indexing MySQL rows
      *
      * @param indexer {ElasticsearchIndexer}
      * @param destinationIndex {string}
@@ -42,8 +42,8 @@ class IndexableModel {
     }
 
     /**
-     * Fetches SQL rows in batches and dispatches to Elastic search indexer.
-     * This is done recursively till the number of rows fetched is zero.
+     * Recursively fetches SQL rows in batches and dispatches to Elastic
+     * search indexer till the number of rows fetched is zero.
      *
      * @param indexer {ElasticsearchIndexer}
      * @param index {string}
@@ -64,7 +64,6 @@ class IndexableModel {
 
         database.query(sql, (error, rows) => {
             if (error) return console.error('Error:', error);
-            // console.log(rows);
             console.log(`BATCH ${batch}: Fetched ${rows.length} rows`);
 
             // If this is first batch, show total batches to be processed
