@@ -22,7 +22,7 @@ class ExampleModel extends IndexableModel {
 
     /**
      * Columns to select must include a 'date_modified'
-     * column. This is ued to sort rows before batch
+     * column. This is used to sort rows before batch
      * selection.
      *
      * @type {Array<string>}
